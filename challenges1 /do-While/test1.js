@@ -20,4 +20,5 @@ function tanyaAngka() {
   });
 }
 
+
 tanyaAngka(); // mulai program
