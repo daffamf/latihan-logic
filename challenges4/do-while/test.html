@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Lempar Dadu</title>
+</head>
+<body>
+  <h2>Game selasaii terimakasihhh</h2>
+  <
+
+  <script>
+    let dadu;
+    let mainLagi;
+    let totalSkor = 0;
+
+    do {
+      alert("Melempar dadu...");
+      dadu = Math.floor(Math.random() * 6) + 1;
+      alert("Hasil: " + dadu);
+
+      totalSkor += dadu;
+
+      if (dadu === 6) {
+        alert(" JACKPOT! Bonus lemparan!");
+        let bonus = Math.floor(Math.random() * 6) + 1;
+        alert("Bonus lemparan menghasilkan: " + bonus);
+        totalSkor += bonus;
+      }
+
+      alert("Total skor sementara: " + totalSkor);
+
+      mainLagi = prompt("Main lagi? (y/n):");
+    } while (mainLagi && mainLagi.toLowerCase() === "y");
+
+    alert("Game selesai! Total skor: " + totalSkor);
+  </script>
+</body>
+</html>

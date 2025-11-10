@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validasi Password</title>
+</head>
+<body>
+  <h2>terimakasih telah mengisi dengan benar </h2>
+  
+
+  <script>
+    let password;
+    let valid = false;
+
+    do {
+      password = prompt("Buat password Anda:");
+
+      if (password && password.length >= 6 && /\d/.test(password)) {
+        alert("Password valid!");
+        valid = true;
+      } else {
+        alert("Password tidak valid! Harus minimal 6 karakter dan mengandung angka.");
+      }
+    } while (!valid);
+
+    alert("Password berhasil dibuat: " + password);
+  </script>
+</body>
+</html>
